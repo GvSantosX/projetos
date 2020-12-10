@@ -1,0 +1,16 @@
+body {
+    width: auto;
+    height: auto;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    transition: .6s;
+}
+
+img:hover {
+    transform: rotateY(270deg);
+    transition: .6s;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to top right, #47DBDA, #40ABDB, #637BDB, #5A4EDB, #773FDB, #891CDB, #A524DB, #D33BDB, #D367DB, #DB8ECC);
+    min-height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.login {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right top, #051937, #0c4e67, #45878b, #85c0a3);
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+
+.login:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to right top, #000, #333, #777, #999);
+    width: 180px;
+    height: 50px;
+    font-size: 35px;
+    text-shadow: 2px 2px #000;
+}

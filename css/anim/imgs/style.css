@@ -6,11 +6,11 @@ body {
 img {
     width: 200px;
     height: 150px;
-    transition: .6s;
+    transition: .3s;
 }
 
 img:hover {
     transform: rotateY(270deg);
-    transition: .6s;
+    transition: .3s;
     cursor: pointer;
 }

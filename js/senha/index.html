@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+</head>
+
+<body>
+
+    <div id="login">
+        <div id="input-user">
+            <img src="./icon/user.svg" class="user_icon" />
+            <input type="text" id="email" class="inputs" placeholder="Email ou nome de usuário" maxlength="40" />
+        </div>
+
+        <div id="input-user">
+            <img src="./icon/pwd.svg" class="pwd_icon" />
+            <input type="password" id="senha" class="inputs" placeholder="Sua senha" maxlength="20">
+        </div>
+
+        <div id="botão">
+            <input type="button" value="Avançar" id="avancar">
+        </div>
+    </div>
+</body>
+
+<script>
+    $("#avancar").click(function() {
+        if ($("#senha").val() == "") {
+            alert("Insira uma senha");
+        } else if ($("#senha").val().length < 6) {
+            alert("Sua senha deve conter no mínimo 6 caracteres");
+        } else {
+            alert("Ok");
+        }
+    });
+</script>
+
+</html>

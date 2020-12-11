@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body {
+    background-color: aqua;
+}
+
+.inputs {
+    width: 25%;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin: 4px 0;
+    outline: none;
+    padding: 4px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+.inputs:focus {
+    border-color: rgb(154, 154, 155);
+    box-shadow: 0 0 8px 0 rgb(148, 168, 189);
+}
+
+.user_icon {
+    top: 13px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 4px 4px;
+    color: #aaa;
+}
+
+.pwd_icon {
+    top: 63px;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    padding: 4px 4px;
+}
+
+#avancar {
+    width: 25%;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin: 8px 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+}

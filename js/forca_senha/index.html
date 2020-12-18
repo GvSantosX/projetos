@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força Senha</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.passwordstrength.js"></script>
+</head>
+
+<body>
+
+    <form method="post">
+        <div id="Cadastro">
+            <div id="input-user">
+                <img src="./icon/user.svg" class="user_icon" />
+                <input id="user" type="text" placeholder="Email ou nome de usuário">
+            </div>
+            <div id="input-user">
+                <img src="./icon/pwd.svg" class="pwd_icon" />
+                <input id="senha" type="password" placeholder="Sua senha" maxlength="12">
+            </div>
+            <div id="botao">
+                <input id="verifica" type="button" value="Verificar" onclick="">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+<script>
+    var filtro = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#$%&*])[^\s]{6,12}$/;
+
+    $(function() {
+        $("#senha").passwordStrength();
+    });
+
+    $("#verifica").click(function() {
+        if ($("#senha").val() == "") {
+            alert("Insira uma senha");
+        } else if (!filtro.test($("#senha").val())) {
+            alert("Senha fora dos padrões!");
+        } else {
+            alert("Ok");
+        }
+    });
+</script>
+
+</html>

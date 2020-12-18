@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body {
+    background-color: aqua;
+}
+
+input {
+    width: 25%;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin: 4px 0;
+    outline: none;
+    padding: 4px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+#verifica {
+    width: 25%;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin: 4px 0;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+#verifica:focus {
+    border-color: rgb(154, 154, 155);
+    box-shadow: 0 0 8px 0 rgb(148, 168, 189);
+}
+
+.user_icon {
+    top: 13px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 4px 4px;
+    color: #aaa;
+}
+
+.pwd_icon {
+    top: 63px;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    padding: 4px 4px;
+}
+
+p {
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+}
+
+.password-strength-indicator {
+    float: right;
+    display: inline-block;
+    height: 5px;
+    min-width: 25%;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin: 4px 0;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.password-strength-indicator.very-weak {
+    background: #cf0000;
+    border-color: #a60000;
+}
+
+.password-strength-indicator.weak {
+    background: #f6891f;
+    border-color: #c56e19;
+}
+
+.password-strength-indicator.mediocre {
+    background: #eeee00;
+    border-color: #d6d600;
+}
+
+.password-strength-indicator.strong {
+    background: #99ff33;
+    border-color: #7acc29;
+}
+
+.password-strength-indicator.very-strong {
+    background: #22cf00;
+    border-color: #1B9900;
+}

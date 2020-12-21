@@ -8,6 +8,7 @@
 html,
 body {
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -62,11 +63,13 @@ form .btn-login {
     min-width: 120px;
     border: none;
     background-color: #7159c1;
+    outline: none;
     color: white;
     border-radius: 25px;
     margin: auto;
     padding: 7px;
     font-family: 'Roboto Condensed';
+    cursor: pointer;
 }
 
 
@@ -117,3 +120,64 @@ form .btn-login {
 
 
 /* Quando clicar no botão, sumir com o form */
+
+.form-hide {
+    animation: down 1.2s forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* FORM NO-NO */
+
+.validate-error {
+    animation: nono 250ms linear, fade paused;
+}
+
+@keyframes nono {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(-15%);
+    }
+    70% {
+        transform: translateX(15%);
+    }
+}
+
+
+/* squares */
+
+.squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite alternate;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-900px) rotate(960deg);
+    }
+}

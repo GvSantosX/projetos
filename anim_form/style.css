@@ -35,6 +35,7 @@ form {
     background-color: white;
     padding: 30px 25px;
     border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 form .input-block {
@@ -53,9 +54,9 @@ form .input-block input {
     padding: 7px;
     font-size: 16px;
     color: #7159c1;
-    border-radius: 2px;
-    border: 1px solid #ccddef;
-    outline-color: #7159c1;
+    border: none;
+    border-bottom: 1px solid #ccddef;
+    outline: none;
 }
 
 form .btn-login {
@@ -70,6 +71,12 @@ form .btn-login {
     padding: 7px;
     font-family: 'Roboto Condensed';
     cursor: pointer;
+}
+
+.entre {
+    color: #7159c1;
+    font-family: 'Roboto Condensed';
+    text-align: center;
 }
 
 

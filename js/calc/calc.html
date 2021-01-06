@@ -10,34 +10,34 @@
 </head>
 
 <body>
-    <form id="calcForm" action="" method="post">
+    <form name="calc" action="" method="post">
         <div>
             <input type="text" name="visor" id="visor">
         </div>
-        <table id="calc">
+        <table id="calc-btns">
             <tr>
-                <td><input type="button" class="num" value="7" name="num7" id="num7" onclick="calcNum(7)"></td>
-                <td><input type="button" class="num" value="8" name="num8" id="num8" onclick="calcNum(8)"></td>
-                <td><input type="button" class="num" value="9" name="num9" id="num9" onclick="calcNum(9)"></td>
-                <td><input type="button" class="oper" value="x" name="multiplicar" onclick=""></td>
+                <td><input type="button" class="num" value="7" id="num7"></td>
+                <td><input type="button" class="num" value="8" id="num8"></td>
+                <td><input type="button" class="num" value="9" id="num9"></td>
+                <td><input type="button" class="oper" value="+" id="somar"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="4" name="num4" id="num4" onclick="calcNum(4)"></td>
-                <td><input type="button" class="num" value="5" name="num5" id="num5" onclick="calcNum(5)"></td>
-                <td><input type="button" class="num" value="6" name="num6" id="num6" onclick="calcNum(6)"></td>
-                <td><input type="button" class="oper" value="-" name="subtrair" onclick=""></td>
+                <td><input type="button" class="num" value="4" id="num4"></td>
+                <td><input type="button" class="num" value="5" id="num5"></td>
+                <td><input type="button" class="num" value="6" id="num6"></td>
+                <td><input type="button" class="oper" value="-" id="subtrair"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="1" name="num1" id="num1" onclick="calcNum(1)"></td>
-                <td><input type="button" class="num" value="2" name="num2" id="num2" onclick="calcNum(2)"></td>
-                <td><input type="button" class="num" value="3" name="num3" id="num3" onclick="calcNum(3)"></td>
-                <td><input type="button" class="oper" value="+" name="somar" onclick=""></td>
+                <td><input type="button" class="num" value="1" id="num1"></td>
+                <td><input type="button" class="num" value="2" id="num2"></td>
+                <td><input type="button" class="num" value="3" id="num3"></td>
+                <td><input type="button" class="oper" value="x" id="multiplicar"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="AC" name="limpar" id="ac"></td>
-                <td><input type="button" class="num" value="0" name="num0" id="num0" onclick="calcNum(0)"></td>
-                <td><input type="button" class="num" value="," name="," id=","></td>
-                <td><input type="button" class="oper" value="=" name="res" onclick="mostrar()"></td>
+                <td><input type="button" class="num" value="AC" id="ac"></td>
+                <td><input type="button" class="num" value="0" id="num0"></td>
+                <td><input type="button" class="oper" value="=" id="res"></td>
+                <td><input type="button" class="oper" value="/" id="dividir"></td>
             </tr>
         </table>
     </form>

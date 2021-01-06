@@ -8,8 +8,6 @@ function calcNum(num) {
     if (typeof gvisor == 'undefined') {
         document.calcform.visor.value = '';
     }
-    document.calcform.visor.value = document.calcform.visor.value + num;
-    gvisor = 1;
 }
 
 function calc(oper) {

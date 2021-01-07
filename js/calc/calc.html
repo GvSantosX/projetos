@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="calc.css">
     <script src="calc.js"></script>
 </head>
@@ -12,32 +12,32 @@
 <body>
     <form name="calc" action="" method="post">
         <div>
-            <input type="text" name="visor" id="visor">
+            <input type="text" id="visor" readonly>
         </div>
         <table id="calc-btns">
             <tr>
-                <td><input type="button" class="num" value="7" id="num7"></td>
-                <td><input type="button" class="num" value="8" id="num8"></td>
-                <td><input type="button" class="num" value="9" id="num9"></td>
-                <td><input type="button" class="oper" value="+" id="somar"></td>
+                <td><input type="button" class="num" value="7" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="8" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="9" onclick="botao(value)"></td>
+                <td><input type="button" class="oper" value="/" onclick="botao(value)"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="4" id="num4"></td>
-                <td><input type="button" class="num" value="5" id="num5"></td>
-                <td><input type="button" class="num" value="6" id="num6"></td>
-                <td><input type="button" class="oper" value="-" id="subtrair"></td>
+                <td><input type="button" class="num" value="4" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="5" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="6" onclick="botao(value)"></td>
+                <td><input type="button" class="oper" value="x" name="*" onclick="botao(name)"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="1" id="num1"></td>
-                <td><input type="button" class="num" value="2" id="num2"></td>
-                <td><input type="button" class="num" value="3" id="num3"></td>
-                <td><input type="button" class="oper" value="x" id="multiplicar"></td>
+                <td><input type="button" class="num" value="1" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="2" onclick="botao(value)"></td>
+                <td><input type="button" class="num" value="3" onclick="botao(value)"></td>
+                <td><input type="button" class="oper" value="+" onclick="botao(value)"></td>
             </tr>
             <tr>
-                <td><input type="button" class="num" value="AC" id="ac"></td>
-                <td><input type="button" class="num" value="0" id="num0"></td>
-                <td><input type="button" class="oper" value="=" id="res"></td>
-                <td><input type="button" class="oper" value="/" id="dividir"></td>
+                <td><input type="button" class="num" value="AC" onclick="limpar()"></td>
+                <td><input type="button" class="num" value="0" onclick="botao(value)"></td>
+                <td><input type="button" class="oper" value="=" onclick="calcular()"></td>
+                <td><input type="button" class="oper" value="-" onclick="botao(value)"></td>
             </tr>
         </table>
     </form>

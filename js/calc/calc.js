@@ -12,7 +12,11 @@ function limpar() {
     document.calc.visor.value = "";
 }
 
+//Função para realizar cálculo
 function calcular() {
     resultado = eval(valor);
     document.calc.visor.value = resultado.toLocaleString('pt-BR');
 }
+
+//Melhorar a eficiência do cálculo
+//Tratar divisões por zero e regras aritméticas

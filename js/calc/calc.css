@@ -53,9 +53,11 @@ form input.oper {
     border: none;
     outline: none;
     border-radius: 30px;
+    transition: .30s;
 }
 
 form input.oper:hover {
     background-color: black;
     color: white;
+    transition: .30s;
 }
